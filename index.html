@@ -1,22 +1,25 @@
 <!doctype html>
 <html ng-app>
 <head>
-	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
-	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/bootswatch/3.0.2/yeti/bootstrap.min.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-<div>
-	<label>Name:</label>
-	<input type="text" ng-model="yourName" placeholder="Enter a name here">
-	<hr>
-	<div class="jumbotron">
-		<div class="container">
-			<h1>Hello {{yourName}}! <i class="icon-spinner icon-spin"></i></h1>
-		</div>
-	</div>
+<div class="jumbotron">
+	<h1>Hello {{yourName}}! <i class="fa fa-spinner fa-spin"></i></h1>
+	<p>If you see a spinner above and typing your name below changes the text above, all is working.</p>
 </div>
+<hr>
+<div class="container">
+	<label>Name:
+		<input type="text" ng-model="yourName" placeholder="Enter a name here">
+	</label>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-route.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-resource.min.js"></script>
+<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
 </body>
 </html>
